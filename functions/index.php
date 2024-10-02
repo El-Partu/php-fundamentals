@@ -64,7 +64,7 @@
                     // echo "<br>";
                 }
             }
-                
+        
     // print_r($record);
             $sum = 0;
             foreach($record as $el){
