@@ -10,14 +10,14 @@
         class Car{
         public $model;
         public $name;
-       public function  __construct($model, $name){
-            $this->model = $model;
-            $this-> name = $name;
-        }
+        public function  __construct($model, $name){
+                $this->model = $model;
+                $this-> name = $name;
+            }
 
-        public function message(){
-            return "My car is a ".$this->name." ".$this->model."!";
-        }
+            public function message(){
+                return "My car is a ".$this->name." ".$this->model."!";
+            }
     }
 
     $myCar = new Car("Black", "Benz");
