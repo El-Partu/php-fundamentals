@@ -24,6 +24,42 @@
 //counting number of words in a string
     echo str_word_count($myCar->message());
     echo "<br/>";
+
+    //construct it helps to initialize classes
+    class Animal{
+        public $name;
+        public $color;
+
+        function __construct($name){
+            $this->name = $name;
+        }
+
+        function callMyName(){
+            echo "My name is $this->name";
+        }
+    }
+
+    // $Dog = new Animal("Bull Dog");
+
+    // $Dog->callMyName();
+
+    // Inheritance
+
+    class Dog extends Animal{
+        public $speak;
+
+        function __construct($speak){
+            $this->speak = $speak;
+        }
+
+        function speakYourLang(){
+            echo "$this->speak!!!";
+        }
+    }
+    $GermanSheperd = new Dog("barks");
+
+    $GermanSheperd->speakYourLang();
     ?>
+
 </body>
 </html>

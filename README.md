@@ -47,7 +47,8 @@ class Animal{
 
 - **`Access Modifiers :`** are keywords that show accessibility law or principle concerning the variable in the class. Let's consider an education institution they have a tag for every student at the end of their graduation _[first class, second class, third class and a pass]_, this tags are attribute in the _university_ which is the class. These tags have rules to get them. Same as variables in classes.
 - **`Types of Access modifiers in PHP`**
-  **`Public`**: attributes with these modifier means it can be accessed everywhere in the class, outside the class and also any of the derived classes. Let's consider a real life example: `public access modifier` is like a _public school_ and this is accessible to all, rich or poor, whoever wants it can use it. Same meaning as variable with the public modifier keyword. `public access modifier` is the `default` access modifier. Therefore when the variable access modifier is not specified its automatically assigned `public access modifier`. Example:
+
+  - **`Public`**: attributes with these modifier means it can be accessed everywhere in the class, outside the class and also any of the derived classes. Let's consider a real life example: `public access modifier` is like a _public school_ and this is accessible to all, rich or poor, whoever wants it can use it. Same meaning as variable with the public modifier keyword. `public access modifier` is the `default` access modifier. Therefore when the variable access modifier is not specified its automatically assigned `public access modifier`. Example:
 
   ```
   class Animal{
@@ -55,7 +56,7 @@ class Animal{
   }
   ```
 
-  **`Protected Access Modifier`**: attributes with this access modifier simply means it can be accessed or used within the class itself and any class that is derived from it, the `keyword` used to define protected attribute is `protected` . Let's consider a real life example, the `protected access modifier` is a like a wifi in own by our parents and has been protected by a password. This wifi is only accessible to the owner and whoever has been given the password in this case becomes the `derived class` but outsiders can not have access to that attribute. Attribute with `protected access modifier` cannot be accessed outside the class. Example
+  - **`Protected Access Modifier`**: attributes with this access modifier simply means it can be accessed or used within the class itself and any class that is derived from it, the `keyword` used to define protected attribute is `protected` . Let's consider a real life example, the `protected access modifier` is a like a wifi in own by our parents and has been protected by a password. This wifi is only accessible to the owner and whoever has been given the password in this case becomes the `derived class` but outsiders can not have access to that attribute. Attribute with `protected access modifier` cannot be accessed outside the class. Example
 
   ```
   class Animal{
@@ -63,7 +64,7 @@ class Animal{
   }
   ```
 
-  **`Private Access Modifier`**: attributes with this access modifier are exclusive to their class. They cannot be accessed by derived class or outside the class. Let's look at a real life example, everyone has a secret that they alone knows, this secret is not shared among anyone even trusted people (derived classes) or outsiders and this remain soley in as. This is how `private access modifiers` works.
+  - **`Private Access Modifier`**: attributes with this access modifier are exclusive to their class. They cannot be accessed by derived class or outside the class. Let's look at a real life example, everyone has a secret that they alone knows, this secret is not shared among anyone even trusted people (derived classes) or outsiders and this remain soley in as. This is how `private access modifiers` works.
 
 ```
 class Animal{
@@ -75,25 +76,25 @@ class Animal{
 
 - #### `Types of methods`
 
-- 1. `Access modifier based classes` : the `access modifiers` have the same meanings as that of the `attrubutes`
+  - `Access modifier based classes` : the `access modifiers` have the same meanings as that of the `attrubutes`
 
 ```
 class Animal{
 
     //public access modifier method
- function $speak(){
+ function speak(){
         echo "Meow";
     }
 
     OR
 
-    public function $speak(){
+    public function speak(){
         echo "Meow";
     }
 
     //protected access modifier method
 
-    protected function $speak(){
+    protected function speak(){
         echo "Meow";
     }
 
@@ -105,7 +106,7 @@ class Animal{
 }
 ```
 
-- 2. `Static method`: this is a type of method that is called directly on the class[`works with public access modifier static method`] for a particular work.For `protected static class` it can be accessed in `base` and `derived` class using the `keyword` [`self:: staticMethodName`]. We don't need to create an instance of that class before using it. A real life example of static method is `responsibilities`, for whatever action which went wrong or right we call the person that instigated it. It can also have all the three access modifiers.
+- - `Static method`: this is a type of method that is called directly on the class[`works with public access modifier static method`] for a particular work.For `protected static class` it can be accessed in `base` and `derived` class using the `keyword` [`self:: staticMethodName`]. We don't need to create an instance of that class before using it. A real life example of static method is `responsibilities`, for whatever action which went wrong or right we call the person that instigated it. It can also have all the three access modifiers.
 
 ```
 class Example {
@@ -131,21 +132,21 @@ class Example {
 }
 ```
 
-- 3. `Final method`: this is type of method which can not be overriding by the `subclasses or derived classes`. A real life example is children inheriting chromosomes from their parents, this chromosomes are permanent and nothing can be done about it.
-     Example
+- - `Final method`: this is type of method which can not be overriding by the `subclasses or derived classes`. A real life example is children inheriting chromosomes from their parents, this chromosomes are permanent and nothing can be done about it.
+    Example
 
-     ```
-        class Base {
-            final public function display() {
-                echo "This is a final method.";
-            }
-        }
-     ```
+    ```
+       class Base {
+           final public function display() {
+               echo "This is a final method.";
+           }
+       }
+    ```
 
-- 4. `Abtstract Method`: This is a method that is defined in an `abstract class` and need to implemented in the `derived class` . That is any class that inherit from the derived class. Abstract method starts with the `abstract` keyword with the method name and parenthesis.
+- - `Abtstract Method`: This is a method that is defined in an `abstract class` and need to implemented in the `derived class` . That is any class that inherit from the derived class. Abstract method starts with the `abstract` keyword with the method name and parenthesis.
 
 ```
 class Abstract{
-   abstract public function $readText();
+   abstract public function readText();
 }
 ```
